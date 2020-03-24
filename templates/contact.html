@@ -1,4 +1,4 @@
-{%extends 'nav.html' %} {%block title%}Contact Us - D-Xpertz{%endblock%} {%block content%}
+{%extends 'nav.html' %}{% load crispy_forms_tags %} {%block title%}Contact Us - D-Xpertz{%endblock%} {%block content%}
 
 <!-- Contact Hero -->
 <section class="contact-hero">
@@ -15,17 +15,17 @@
 <div class="contact-info">
 
     <div class="container">
-        <div class="add address">
+        <div class="add address" data-aos="fade-up" data-aos-delay="60">
             <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
             <h1>Address</h1>
             <p>27 Airport Road Ede Plaza, Benin City, Edo State, Nigeria</p>
         </div>
-        <div class="add mobile">
+        <div class="add mobile " data-aos="fade-up" data-aos-delay="65">
             <div class="icon"><i class="fas fa-phone-alt"></i></div>
             <h1>Mobile</h1>
             <p><a href="tel:+2348055964598">+234 805 596 4598</a></p>
         </div>
-        <div class="add email">
+        <div class="add email" data-aos="fade-up" data-aos-delay="70">
             <div class="icon"><i class="fas fa-envelope"></i></div>
             <h1>Email</h1>
             <p><a href="mailto:contact@dxpertz.com">contact@dxpertz.com</a></p>
@@ -37,31 +37,20 @@
 <!-- Contact Form -->
 <section class="contact-form">
     <div class="container">
-        <div class="title">
+        <div class="title" data-aos="fade-up" data-aos-delay="50">
             <h1>Contact Us.</h1>
             <p>For inquiries and more information about our programmes and updates. <br> Please kindly fill the form below with your contact details.</p>
         </div>
 
         <div class="form">
-            <form method="POST" action="">
-                <label>
-                    <div class="input">Name: <input type="text" name="name" class="input-tab" placeholder="Name"></div>
-                </label>
-                <label>
-                    <div class="input">Email:<input type="email" name="email" class="input-tab" placeholder="Email">
-                    </div>
-                </label>
-                <label>
-
-                    <div class="input">Phone: <input type="text" name="phone" class="input-tab" name="phone"
-                            placeholder="Phone Number"></div>
-                </label>
-                <label>Message:<textarea name="message" name="message" placeholder="Write A Message"></textarea>
-                </label>
+            <form class="form" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="input-box">
+                    {{ form|crispy}}
+                </div>
 
                 <div class="input"><input type="submit" value="Submit" class="submit"></div>
             </form>
-
         </div>
     </div>
 </section>

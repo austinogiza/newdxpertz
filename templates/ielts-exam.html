@@ -1,0 +1,33 @@
+{%extends 'nav.html'%} {%load static%} {% block title %}D-Xpertz - IELTS ADVERT {% endblock %} {%block content %}
+
+<section class="prog-hero">
+    <h1>Study, Work & Live Abroad</h1>
+    <p>Get in here</p>
+</section>
+
+<!-- Courses Write Up -->
+<section class="courses">
+    <div class="container">
+        <div class="images" data-aos="fade-in" data-aos-delay="50"><img src="{% static 'images/add.png'%}" alt=""></div>
+        <div class="details" data-aos="fade-up" data-aos-delay="55">
+            <h1> Study, Work & Live Abroad</h1>
+            <p> Interested In Ielts exam? </p>
+            <p> Looking for details on Ielts?</p>
+            <p> Do You Want To Work Or Study Abroad?</p>
+            <p> Looking for education centre to train you on Ielts </p>
+            <p>Give us a call
+                <a href="tel:+2348055964598">+234 805 596 4598</a> or visit our office at 27, Airport Road, Ede Plaza Opposite The Observer, Benin City</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- End banner -->
+
+<section class="end-banner">
+    <a href="{%url 'contact'%}">Register Now</a>
+</section>
+
+
+
+{%endblock%}

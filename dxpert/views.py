@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from django.views.generic.edit import CreateView
+from .forms import ContactForm
 
 
 def home(request):
@@ -9,8 +11,10 @@ def about(request):
     return render(request, 'about.html')
 
 
-def contact(request):
-    return render(request, 'contact.html')
+class contact(CreateView):
+    form_class = ContactForm
+    template_name = 'contact.html'
+    success_url = '../success/'
 
 
 def programmes(request):
@@ -67,3 +71,11 @@ def primavera(request):
 
 def microsoft(request):
     return render(request, 'microsoft.html')
+
+
+def success(request):
+    return render(request, 'success.html')
+
+
+def ieltsexam(request):
+    return render(request, 'ielts-exam.html')

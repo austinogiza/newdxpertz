@@ -6,7 +6,7 @@ const li = document.querySelectorAll('nav-link li');
 
 const backTo = document.querySelector('.back-top');
 
-
+const header = document.querySelector('.nav-bar');
 
 nav.addEventListener('click', () => {
     tog.classList.toggle('nav-active');
@@ -43,4 +43,13 @@ window.addEventListener("scroll", () => {
 backTo.addEventListener('click', () => {
     window.scrollTo(0, 0);
 
+});
+
+window.addEventListener('scroll', () => {
+
+    if (window.pageYOffset > 200) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
 });

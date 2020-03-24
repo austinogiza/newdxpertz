@@ -94,6 +94,33 @@ p {
     margin: 10px 0;
 }
 
+.courses a {
+    color: var(--blue);
+    font-size: var(--text);
+    position: relative;
+    transition: 0.4s ease-in;
+}
+
+.courses a::after {
+    width: 0%;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: var(--blue);
+    height: 3px;
+    border-radius: 2px;
+    transition: 0.4s ease-in;
+}
+
+.courses a:hover::after {
+    width: 100%;
+}
+
+.courses a:hover::after a {
+    color: var(--blue);
+}
+
 .courses .details {
     padding: 10px;
 }

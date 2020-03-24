@@ -9,7 +9,7 @@ urlpatterns = [
 
     path('', views.home, name='home'),
     path('about/', views.about, name='about'),
-    path('contact/', views.contact, name='contact'),
+    path('contact/', views.contact.as_view(), name='contact'),
     path('programmes/', views.programmes, name='programmes'),
     path('programmes/ielts/', views.ielts, name='ielts'),
     path('programmes/php/', views.php, name='php'),
@@ -24,4 +24,6 @@ urlpatterns = [
     path('programmes/java/', views.java, name='java'),
     path('programmes/python/', views.python, name='python'),
     path('programmes/webdesign/', views.webdesign, name='webdesign'),
+    path('success/', views.success, name='success'),
+    path('ielts-exam/', views.ieltsexam, name='ieltsexam'),
 ]

@@ -13,7 +13,7 @@
     --mob: 14px;
     --blue: rgba(13, 89, 253, 0.7);
     --grey: rgb(127, 140, 141, 0.6);
-    --lightgrey: rgb(127, 140, 141, 0.6);
+    --lightgrey: rgb(127, 140, 141, 0.2);
     --dogder: rgba(17, 141, 240, 0.2)
 }
 
@@ -50,6 +50,7 @@ ul {
 
 .scrolled {
     background: var(--black);
+    transition: 0.4s ease-in;
 }
 
 header {
@@ -193,10 +194,34 @@ nav ul li a {
     background: #FFFFFF;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+.box .dets:hover {
+    transform: scale(1.5);
 }
 
 .box .dets img {
     width: 100%;
+}
+
+
+/* Draw Svg */
+
+.draw {
+    width: 100%;
+    height: 400px;
+    display: none;
+}
+
+.draw .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -331,12 +356,18 @@ nav ul li a {
 .hero-service .prog {
     padding: 10px;
     transition: 0.5s ease;
-    background: url('../images/bg.svg');
-    background-size: cover;
 }
 
-.hero-service .prog:hover {
+.hero-service a:hover {
     background: var(--blue);
+    color: var(--white);
+}
+
+.hero-service a:hover h1 {
+    color: var(--white);
+}
+
+.hero-service a:hover p {
     color: var(--white);
 }
 
@@ -347,12 +378,25 @@ nav ul li a {
 .hero-service .body h1 {
     margin: 10px 0;
     font-size: var(--header);
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.hero-service a {
+    background: url('../images/bg.svg');
+    background-size: cover;
+    margin: 10px 0;
+    font-size: var(--header);
+    color: var(--black);
+    padding: 10px;
+    transition: 0.5s ease;
 }
 
 .hero-service .body p {
     margin: 10px 0;
     font-size: var(--text);
     line-height: 24px;
+    color: var(--black);
 }
 
 
@@ -412,7 +456,7 @@ nav ul li a {
 }
 
 .programmes a:hover {
-    background: var(--blue);
+    background: var(--black);
     color: var(--white);
 }
 
@@ -420,7 +464,7 @@ nav ul li a {
 /* register hero */
 
 .register-hero {
-    height: 600px;
+    height: 500px;
     width: 100%;
     background: url('../images/end.png') no-repeat center center/cover;
     display: flex;
@@ -432,6 +476,27 @@ nav ul li a {
     color: var(--white);
     font-size: var(--title);
     position: relative;
+    transition: 0.4s ease-in;
+}
+
+.register-hero a::after {
+    width: 0%;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: var(--blue);
+    height: 3px;
+    border-radius: 2px;
+    transition: 0.4s ease-in;
+}
+
+.register-hero a:hover::after {
+    width: 100%;
+}
+
+.register-hero a:hover::after a {
+    color: var(--blue);
 }
 
 
