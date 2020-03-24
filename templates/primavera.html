@@ -1,0 +1,83 @@
+{%extends 'nav.html'%} {%load static%} {% block title %}D-Xpertz - PRIMAVERA {% endblock %} {%block content %}
+
+<section class="prog-hero">
+    <h1>The <span>Future </span> is now.</h1>
+    <p>What's in store for you?</p>
+</section>
+
+<!-- Courses Write Up -->
+<section class="courses">
+    <div class="container">
+        <div class="images"><img src="{% static 'images/prim.jpg'%}" alt=""></div>
+        <div class="details">
+            <h1>PRIMAVERA</h1>
+            <p>Primavera is an enterprise project portfolio management software. It includes project management, product management, collaboration and control capabilities, and integrates with other enterprise software such as Oracle and SAP’s ERP systems.
+
+            </p>
+            <p>Primavera was launched in 1983 by Primavera Systems Inc., which was acquired by Oracle Corporation in 2008.
+            </p>
+            <p>It provides project and program management software for the Architecture, Engineering and Construction industry.
+            </p>
+            <p>Focused on project portfolio management, or PPM, Primavera's solutions let users measure progress, assure governance, improve team collaboration and prioritize project investments and resources.</p>
+        </div>
+        <div class="details">
+            <h1>COURSE CONTENT</h1>
+            <p>The course covers the following topics:</p>
+            <p>Understanding P6 Data</p>
+            <p>Enterprise Project Structure</p>
+            <p>Creating a Project</p>
+            <p>Creating a Work Breakdown Structure</p>
+            <p>Adding Activities</p>
+            <p>Creating Relationships</p>
+            <p>Scheduling</p>
+            <p>Assigning Constraints</p>
+            <p>Using Reflection Projects</p>
+            <p>Formatting Schedule Data</p>
+            <p>Roles and Resources</p>
+            <p>Assigning Roles</p>
+
+        </div>
+        <div class="images"><img src="{%static 'images/primavera.jpg'%}" alt=""></div>
+    </div>
+</section>
+
+<!-- Middle Banner -->
+
+<section class="middle-hero">
+
+    <div class="container">
+        <p>Interested in tech?</p>
+        <h1>Start Now</h1>
+    </div>
+
+</section>
+<!-- Courses Write Up -->
+<section class="courses">
+    <div class="container">
+        <div class="images"><img src="{% static 'images/prime.jpg'%}" alt=""></div>
+        <div class="details">
+            <h1>COURSE MODULES</h1>
+            <p>Primavera's software packages include P6, Prosight, Contract Manager, Cost Manager, Pertmaster, SureTrak, Evolve and Inspire. The newest addition to the suite of project management solutions is Primavera P6, which is an integrated PPM (project
+                portfolio management) solution that provides a real-time view of portfolio performance.</p>
+            <p>P6 also offers what-if scenario modeling, tabular scorecards and capacity analysis.</p>
+            <p>This course also covers:</p>
+            <p>Assigning Resources</p>
+            <p>Analysing Resources.</p>
+            <p>Optimizing the Project Plan</p>
+            <p>Baselining the Project Plan</p>
+            <p>Project Execution and Control</p>
+            <p>Reporting Performance</p>
+            <p>Duration: 2 months</p>
+        </div>
+    </div>
+</section>
+
+<!-- End banner -->
+
+<section class="end-banner">
+    <a href="{%url 'contact'%}">Register Now</a>
+</section>
+
+
+
+{%endblock%}

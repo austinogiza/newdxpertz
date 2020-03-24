@@ -1,0 +1,91 @@
+{%extends 'nav.html'%} {%load static%} {% block title %}D-Xpertz - JAVA {% endblock %} {%block content %}
+
+<section class="prog-hero">
+    <h1>The <span>Future </span> is now.</h1>
+    <p>What's in store for you?</p>
+</section>
+
+<!-- Courses Write Up -->
+<section class="courses">
+    <div class="container">
+        <div class="images"><img src="{% static 'images/java.png'%}" alt=""></div>
+        <div class="details">
+            <h1>JAVA</h1>
+            <p>Java is a general-purpose computer-programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few.</p>
+            <p>Java is a high-level programming language developed by Sun Microsystems.</p>
+            <p>The Java syntax is similar to C++, but is strictly an object-oriented programming language.</p>
+            <p>For example, most Java programs contain classes, which are used to define objects, and methods, which are assigned to individual classes. Java is more powerful programming language because it support the pure object oriented programming language
+                (means the class and object concept).</p>
+            <p>Python has a less pronounced learning curve and it is a language one can love, because of its beauty. Java does some things better than python, as multi-threading.</p>
+        </div>
+        <div class="details">
+            <h1>WHO CREATED JAVA?</h1>
+            <p>In the early 90s, Java, which originally went by the name Oak and then Green, was created by a team led by James Gosling for Sun Microsystems, a company now owned by Oracle.</p>
+            <p>Java was originally designed for use on digital mobile devices, such as cellphones. However, when Java 1.0 was released to the public in 1996, its main focus had shifted to use on the internet, providing interactivity with users by giving
+                developers a way to produce animated web pages.</p>
+            <p>However, there have been many updates since version 1.0, like J2SE 1.3 in 2000, J2SE 5.0 in 2004, Java SE 8 in 2014, and Java SE 10 in 2018.</p>
+            <p>Over the years, Java has evolved as a successful language for use both on and off the internet.</p>
+            <p>Java is good to learn Object Oriented programming, but not so good for procedural one, prefer C there.
+            </p>
+            <p>The OOP or Object Oriented programming is auseful skill because it handles the complexity of a real-world application quite well. It's easier to think in terms of class and objects.</p>
+            <p>The team at Sun Microsystems was successful in combining these key principles, and Java's popularity can be traced to it being a robust, secure, easy to use, and portable programming language.</p>
+        </div>
+        <div class="images"><img src="{%static 'images/java.jpeg'%}" alt=""></div>
+    </div>
+</section>
+
+<!-- Middle Banner -->
+
+<section class="middle-hero">
+
+    <div class="container">
+        <p>Interested in tech?</p>
+        <h1>Start Now</h1>
+    </div>
+
+</section>
+<!-- Courses Write Up -->
+<section class="courses">
+    <div class="container">
+        <div class="images"><img src="{% static 'images/java.jpg'%}" alt=""></div>
+        <div class="details">
+            <h1>WHY CHOOSE JAVA?</h1>
+            <p>Java was designed with a few key principles in mind:</p>
+            <p>1. <strong> Ease of Use: </strong> The fundamentals of Java came from a programming language called C++. Although C++ is a powerful language, it is complex in its syntax and inadequate for some of Java's requirements. Java built on and improved
+                the ideas of C++ to provide a programming language that was powerful and simple to use.
+            </p>
+            <p>2. <strong>Reliability: </strong> Java needed to reduce the likelihood of fatal errors from programmer mistakes. With this in mind, object-oriented programming was introduced. When data and its manipulation were packaged together in one place,
+                Java was robust.</p>
+            <p>3. <strong> Security:</strong> Because Java was originally targeting mobile devices that would be exchanging data over networks, it was built to include a high level of security. Java is probably the most secure programming language to date.</p>
+            <p>4. <strong>Platform Independence:</strong> Programs need to work regardless of the machines they're being executed on. Java was written to be a portable and cross-platform language that doesn't care about the operating system, hardware, or
+                devices that it's running on.</p>
+        </div>
+        <div class="details">
+            <h1>ADVANTAGES OF JAVA</h1>
+            <p>Java was designed to be easy to use, write, compile, debug, and learn than other programming languages.
+            </p>
+            <p>Object-Oriented: Allows you to create modular programs and reusable code.</p>
+            <p>Platform-Independent: Ability to move easily from one computer system to another</p>
+            <p>1. <strong>Simple:</strong> The Java language is easy to learn.</p>
+            <p>2. <strong>Familiar:</strong> Java is similar to C/C++ but it removes the drawbacks and complexities of C/C++ like pointers and multiple inheritances</p>
+            <p>3. Object-Oriented</p>
+            <p>4. Robust</p>
+            <p>5. Secure</p>
+            <p>6. High Performance</p>
+            <p>7. Multithreaded</p>
+            <p>8. Platform Independence</p>
+        </div>
+        <div class="images"><img src="{%static 'images/javaa.png'%}" alt=""></div>
+    </div>
+</section>
+
+<!-- End banner -->
+
+<section class="end-banner">
+    <a href="{%url 'contact'%}">Register Now</a>
+</section>
+
+
+
+
+{%endblock%}

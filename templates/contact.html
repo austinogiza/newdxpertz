@@ -1,0 +1,77 @@
+{%extends 'nav.html' %} {%block title%}Contact Us - D-Xpertz{%endblock%} {%block content%}
+
+<!-- Contact Hero -->
+<section class="contact-hero">
+
+    <h1>We’re here to help</h1>
+    <p>Need more information? <br> Contact us</p>
+    </div>
+</section>
+
+
+<!-- Conttact Information -->
+
+
+<div class="contact-info">
+
+    <div class="container">
+        <div class="add address">
+            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+            <h1>Address</h1>
+            <p>27 Airport Road Ede Plaza, Benin City, Edo State, Nigeria</p>
+        </div>
+        <div class="add mobile">
+            <div class="icon"><i class="fas fa-phone-alt"></i></div>
+            <h1>Mobile</h1>
+            <p><a href="tel:+2348055964598">+234 805 596 4598</a></p>
+        </div>
+        <div class="add email">
+            <div class="icon"><i class="fas fa-envelope"></i></div>
+            <h1>Email</h1>
+            <p><a href="mailto:contact@dxpertz.com">contact@dxpertz.com</a></p>
+        </div>
+    </div>
+</div>
+
+
+<!-- Contact Form -->
+<section class="contact-form">
+    <div class="container">
+        <div class="title">
+            <h1>Contact Us.</h1>
+            <p>For inquiries and more information about our programmes and updates. <br> Please kindly fill the form below with your contact details.</p>
+        </div>
+
+        <div class="form">
+            <form method="POST" action="">
+                <label>
+                    <div class="input">Name: <input type="text" name="name" class="input-tab" placeholder="Name"></div>
+                </label>
+                <label>
+                    <div class="input">Email:<input type="email" name="email" class="input-tab" placeholder="Email">
+                    </div>
+                </label>
+                <label>
+
+                    <div class="input">Phone: <input type="text" name="phone" class="input-tab" name="phone"
+                            placeholder="Phone Number"></div>
+                </label>
+                <label>Message:<textarea name="message" name="message" placeholder="Write A Message"></textarea>
+                </label>
+
+                <div class="input"><input type="submit" value="Submit" class="submit"></div>
+            </form>
+
+        </div>
+    </div>
+</section>
+
+<!-- Map -->
+<!-- 
+<section class="map">
+    <div class="container">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.5135333883445!2d5.613643914769668!3d6.327434995420879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x90a50d9d3d14acd9!2sD-Xpertz%20Computer%20Technology!5e0!3m2!1sen!2sng!4v1584919635107!5m2!1sen!2sng"></iframe>
+    </div>
+</section> -->
+{% endblock %}

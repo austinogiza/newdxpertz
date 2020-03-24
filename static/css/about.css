@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;469;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+:root {
+    --light: #F3F5F7;
+    --white: #ffffff;
+    --black: #000000;
+    --bold: 60px;
+    --title: 50px;
+    --text: 16px;
+    --head: 32px;
+    --header: 24px;
+    --new: rgba(255, 255, 255, 0.8);
+    --mob: 14px;
+    --blue: rgba(13, 89, 253, 0.7);
+    --grey: rgb(127, 140, 141, 0.6);
+    --dogder: rgba(17, 141, 240, 0.2)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--light);
+    width: 100%;
+    height: 100%;
+    font-family: 'Oswald', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--text);
+    line-height: 24px;
+}
+
+.about-hero {
+    width: 100%;
+    height: 600px;
+    background: url('../images/about.png') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-hero h1 {
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: var(--title);
+}
+
+
+/* OUR PHILOSOPHY */
+
+.philosophy {
+    width: 100%;
+    min-height: 200px;
+    margin: 20px 0;
+}
+
+.philosophy .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.philosophy .container h1 {
+    font-size: var(--head);
+    margin: 10px 0;
+}
+
+
+/* business scope */
+
+.business-scope {
+    width: 100%;
+    min-height: 300px;
+    background: var(--blue);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(300px, auto);
+    color: var(--white);
+}
+
+.business-scope .images {
+    width: 100%;
+}
+
+.business-scope img {
+    width: 100%;
+}
+
+.business-scope .scope {
+    padding: 10px 20px;
+}
+
+.business-scope .scope h1 {
+    font-size: var(--title);
+}
+
+.business-scope .scope p {
+    color: var(--white);
+}
+
+
+/* company profile */
+
+.company-profile {
+    width: 100%;
+    min-height: 200px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: minmax(150px, auto);
+    grid-gap: 20px;
+    text-align: center;
+    padding: 10px 0;
+    background: var(--blue);
+    color: var(--white);
+    align-items: center;
+    justify-content: center;
+}
+
+.company-profile .profile p {
+    color: var(--white);
+}
+
+.company-profile .profile {
+    padding: 10px;
+    transition: 0.4 ease cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.company-profile .profile:hover {
+    background: var(--blue);
+    color: var(--white);
+    transform: scale(1.1);
+}
+
+.company-profile .profile:hover p {
+    color: var(--white);
+}
+
+@media only screen and (max-width:790px) {
+    .company-profile {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .business-scope {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .about-hero h1 {
+        font-size: var(--head);
+        text-align: center;
+    }
+    .business-scope .scope h1 {
+        font-size: var(--head);
+        margin: 10px 0;
+    }
+    p {
+        text-align: left;
+        padding: 0 10px;
+    }
+    h1 {
+        text-align: left;
+        padding: 0 10px;
+    }
+}

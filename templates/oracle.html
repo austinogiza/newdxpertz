@@ -1,0 +1,100 @@
+{%extends 'nav.html'%} {%load static%} {% block title %}D-Xpertz - ORACLE DATABASE {% endblock %} {%block content %}
+
+<section class="prog-hero">
+    <h1>The <span>Future </span> is now.</h1>
+    <p>What's in store for you?</p>
+</section>
+
+<!-- Courses Write Up -->
+<section class="courses">
+    <div class="container">
+        <div class="images"><img src="{% static 'images/oracle.jpg'%}" alt=""></div>
+        <div class="details">
+            <h1>ORACLE DATABASE</h1>
+            <p>The Oracle Database is a high-performance, enterprise-class database, this is "the first database. Oracle Database introduces 500 new features to the database, most notably pluggable databases and multitenant architecture.
+            </p>
+            <p>Oracle is doing everything to jump into the cloud bandwagon. With 12C, Oracle is trying to address the problem of Multitenancy through this feature.</p>
+            <p>There is a radical change and a major change in the core database architecture through the introduction of Container Databases also called CBD and Pluggable Databases (PDB).</p>
+            <p>The memory and process is owned by the Container Database. The container holds the metadata where the PDBs hold the user data. You can create upto 253 PDBs including the seed PDB. In a large setup, it is common to see 20 or 30 different instances
+                running in production environment.</p>
+            <p>With these many instances, it is a maintenance nightmare as all these instances have to be separately with Pluggable Databases feature, you just have to do all this for ONE single instance.</p>
+            <p>Oracle SQL features will help you query and manipulate data within the database, use the dictionary views to retrieve metadata and create reports about their schema objects.</p>
+
+            <p>Oracle Enterprise Manager provides a consolidated platform for provisioning database services via self-service model enabling elasticity. it provides accountability for database usage that covers the latest database services and capabilities.</p>
+
+            <p>DURATION : 168HRS</p>
+        </div>
+        <div class="details">
+            <h1>ORACLE DATABASE 12C: ADMIN, INSTALL AND UPGRADE ACCELERATED</h1>
+            <p>In this course, you will be acquainted with Oracle Database Cloud Service. This course will show you about the Oracle Database engineering and you will find how to viably deal with an Oracle Database case. You will likewise be given key data
+                on the best way to introduce and regulate Oracle Database 12c.</p>
+            <h1>CERTIFICATE TITLE: ORACLE DATABASE ADMINISTRATOR</h1>
+            <p>PREREQUISITE: UNDERGRADUATES, GRADUATES, GRADUATE TRAINEE, EXPERIENCE WORKERS.</p>
+            <p>EXIIT PROFILE</p>
+            <p>UPON COMPLETION OF THE PROGRAM, STUDENTS WILL BE ABLE TO:</p>
+            <p>WORK WITH LINUX</p>
+            <p>CREATE AND EXECUTE SQL QUERIES</p>
+            <p>MANAGE AND ADMINISTER ORACLE DATABASES</p>
+        </div>
+        <div class="images"><img src="{%static 'images/orac.jpeg'%}" alt=""></div>
+    </div>
+</section>
+
+<!-- Middle Banner -->
+
+<section class="middle-hero">
+
+    <div class="container">
+        <p>Interested in tech?</p>
+        <h1>Start Now</h1>
+    </div>
+
+</section>
+<!-- Courses Write Up -->
+<section class="courses">
+    <div class="container">
+        <div class="images"><img src="{% static 'images/orcc.jpg'%}" alt=""></div>
+        <div class="details">
+            <h1>UPON COMPLETION OF THIS COURSE, YOU WILL ACCOMPLISH THE FOLLOWING:
+            </h1>
+            <p>We have two types of IELTS, Academic and General;
+            </p>
+            <h1>ACADEMIC IELTS:</h1>
+            <p>Understand the basic concepts of relational databases ensure refined code by developers.</p>
+            <p>Create reports of sorted and restricted data.</p>
+            <p> Run data manipulation statements (DML).</p>
+            <p>Control database access to specific objects.</p>
+            <p>Manage schema objects.</p>
+            <p>Manage objects with data dictionary views.</p>
+            <p> Retrieve row and column data from tables.</p>
+            <p>Manage objects with data dictionary views.</p>
+            <p>Control privileges at the object and system level.</p>
+            <p>Create indexes and constraints alter existing schema objects.</p>
+            <p>Create and query external tables.</p>
+            <p>Manage Oracle Database Storage structures.</p>
+            <p> Install Oracle Database 12c software.</p>
+            <p>Create an Oracle Database.</p>
+            <p>Create a container database.</p>
+            <p>Monitor the Database.</p>
+            <p>Manage Database Performance.</p>
+            <p> Implement Database Auditing.</p>
+            <p>Configure the Database Instance Such That Resources Are Appropriately Allocated Among Sessions and Tasks.
+            </p>
+            <p>Schedule Jobs to Run Inside or Outside of the Database.</p>
+            <p>Configure Oracle Net Services.</p>
+            <p>Configure your Database For Backup and Recovery Operations.</p>
+            <p>Describe Oracle Database Architecture.</p>
+            <p>Manage the Oracle Database Instance.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- End banner -->
+
+<section class="end-banner">
+    <a href="{%url 'contact'%}">Register Now</a>
+</section>
+
+
+{%endblock%}

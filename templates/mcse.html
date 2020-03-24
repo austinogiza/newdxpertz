@@ -1,0 +1,46 @@
+{%extends 'nav.html'%} {%load static%} {% block title %}D-Xpertz - MCSE: SERVER INFRASTRUCTURE {% endblock %} {%block content %}
+
+<section class="prog-hero">
+    <h1>The <span>Future </span> is now.</h1>
+    <p>What's in store for you?</p>
+</section>
+
+<!-- Courses Write Up -->
+<section class="courses">
+    <div class="container">
+        <div class="images"><img src="{% static 'images/mcse.jpeg'%}" alt=""></div>
+        <div class="details">
+            <h1>MCSE 2012</h1>
+            <p>The Microsoft Certified Solution Expert (MCSE): Server Infrastructure Certification validates that you have the skills needed to run a highly efficient and modern data center, with expertise in identity management, virtualization, storage
+                and networking. It is globally recognized standard for IT professionals. Earning this certification will qualify you for jobs as computers support specialists and information security analyst.
+
+            </p>
+        </div>
+        <div class="details">
+            <h1>MCSE: SERVER INFRASTRUCTURE <br>COURSE CONTENT:</h1>
+            <p>Course 20410: Installing and configuring Windows server 2012 At course completion, after completing this course, students should be able to:</p>
+            <p>Install and configure Windows server 2012.</p>
+            <p>Describe AD DS</p>
+            <p>Manage active Directory administration.</p>
+            <p>Implement IPv4.</p>
+            <p>Implement Dynamic Host Configuration Protocol (DHCP).</p>
+            <p>Implement Domain Name System (DNS)</p>
+            <p>Implement Ipv6</p>
+            <p>Implement local storage</p>
+            <p>Implement file and print services</p>
+            <p>Implement Group Policy</p>
+            <p>Secure Windows servers by using Group Policy Objects (GPOs)</p>
+            <p>Implement server virtualization by using Hyper-v</p>
+        </div>
+        <div class="images"><img src="{%static 'images/mcse.jpg'%}" alt=""></div>
+    </div>
+</section>
+
+<!-- End banner -->
+
+<section class="end-banner">
+    <a href="{%url 'contact'%}">Register Now</a>
+</section>
+
+
+{%endblock%}

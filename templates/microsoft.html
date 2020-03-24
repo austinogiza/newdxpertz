@@ -1,0 +1,70 @@
+{%extends 'nav.html'%} {%load static%} {% block title %}D-Xpertz - MICROSOFT OFFICE TRAINING {% endblock %} {%block content %}
+
+<section class="prog-hero">
+    <h1>The <span>Future </span> is now.</h1>
+    <p>What's in store for you?</p>
+</section>
+
+<!-- Courses Write Up -->
+<section class="courses">
+    <div class="container">
+        <div class="images"><img src="{% static 'images/micro.jpg'%}" alt=""></div>
+        <div class="details">
+            <h1>MICROSOFT OFFICE TRAINING</h1>
+            <p>Microsoft Office is the most widely used software suite in business and office environments.
+
+            </p>
+            <p>It is essential if you want to keep up to date with the skills demanded by many employers and progress your career. Our training provides a comprehensive range of Microsoft office training courses designed to train you in all aspects of Microsoft
+                office, and the individual programs it contains such as Excel, Access, PowerPoint and Microsoft Word.
+            </p>
+            <p>Even if you already have some basic MS Office skills our training helps you get up to date with the latest versions quickly. If you are a beginner, you can gain a comprehensive knowledge which includes realistic work-place exercises.
+            </p>
+            <p>Duration: 72 hours</p>
+        </div>
+        <div class="details">
+            <h1>CERTIFICATE PROGRAM IN MICROSOFT OFFICE SUITE</h1>
+
+            <p>Microsoft office training is for both professionals and people that are new to the field of computer, our training will give you the expertise you need in specific product or technology.</p>
+            <p>When you learn from our Microsoft certified Trainers, you can be confident that what you will learn will be accurate, complete and up to date.</p>
+            <p>New to Computer?</p>
+            <p>Start by learning the fundamentals of computer technology, using the training resources provided by Microsoft.
+            </p>
+        </div>
+        <div class="images"><img src="{%static 'images/micro.png'%}" alt=""></div>
+    </div>
+</section>
+
+<!-- Middle Banner -->
+
+<section class="middle-hero">
+
+    <div class="container">
+        <p>Interested in tech?</p>
+        <h1>Start Now</h1>
+    </div>
+
+</section>
+<!-- Courses Write Up -->
+<section class="courses">
+    <div class="container">
+        <div class="images"><img src="{% static 'images/main.jpg'%}" alt=""></div>
+        <div class="details">
+            <h1>MODULES</h1>
+            <p>Skills in Microsoft Word Training</p>
+            <p>Skills in Microsoft Excel Training</p>
+            <p>Skills in Microsoft Access Training</p>
+            <p>Skills in Microsoft PowerPoint Training</p>
+            <p>Skills in Microsoft Outlook Training</p>
+            <p>Skills in Microsoft Corel Draw Training</p>
+        </div>
+    </div>
+</section>
+
+<!-- End banner -->
+
+<section class="end-banner">
+    <a href="{%url 'contact'%}">Register Now</a>
+</section>
+
+
+{%endblock%}

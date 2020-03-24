@@ -1,0 +1,72 @@
+{%extends 'nav.html'%} {%load static%} {% block title %}D-Xpertz - SQL SERVER {% endblock %} {%block content %}
+
+<section class="prog-hero">
+    <h1>The <span>Future </span> is now.</h1>
+    <p>What's in store for you?</p>
+</section>
+
+<!-- Courses Write Up -->
+<section class="courses">
+    <div class="container">
+        <div class="images"><img src="{% static 'images/sqlserver.jpg'%}" alt=""></div>
+        <div class="details">
+            <h1>SQL SERVER</h1>
+            <p>SQL Server is a data engine introduced by Microsoft. It provides an environment used to create and manage databases.
+
+            </p>
+            <p>It allows secure and efficient storage.</p>
+            <p>It provides other components and services that support the business intelligence platform to generate reports and help analyze the data.</p>
+            <p>Similar to other RDBMS software, SQL Server is built on top of SQL, a standard programming language for interacting with the relational databases.</p>
+            <p>SQL server is tied to Transact-SQL, or T-SQL, the Microsoft’s implementation of SQL that adds a set of proprietary programming constructs.</p>
+        </div>
+        <div class="details">
+            <h1>FUNCTIONS OF SQL</h1>
+            <p>Understand the basic concepts of relational databases ensure refined code by developers.</p>
+            <p>Create reports of sorted and restricted data.</p>
+            <p>Run data manipulation statements (DML).</p>
+            <p>Control database access to specific objects.</p>
+
+            <p>Manage schema objects.</p>
+            <p>Manage objects with data dictionary views.</p>
+            <p>Retrieve row and column data from tables.</p>
+            <p>Control privileges at the object and system level.</p>
+            <p>Create indexes and constraints alter existing schema objects.</p>
+            <p>Create and query external tables.</p>
+        </div>
+        <div class="images"><img src="{%static 'images/sqlserverr.jpg'%}" alt=""></div>
+    </div>
+</section>
+
+<!-- Middle Banner -->
+
+<section class="middle-hero">
+
+    <div class="container">
+        <p>Interested in tech?</p>
+        <h1>Start Now</h1>
+    </div>
+
+</section>
+<!-- Courses Write Up -->
+<section class="courses">
+    <div class="container">
+        <div class="images"><img src="{% static 'images/SQLSERVE.jpg'%}" alt=""></div>
+        <div class="details">
+            <h1>COURSE MODULES</h1>
+            <p>SQL Server works exclusively on Windows environment for more than 20 years. </p>
+            <p>In 2016, Microsoft made it available on Linux. SQL Server 2017 became generally available in October 2016 that ran on both Windows and Linux.</p>
+            <p>Duration: 4 months</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- End banner -->
+
+<section class="end-banner">
+    <a href="{%url 'contact'%}">Register Now</a>
+</section>
+
+
+
+{%endblock%}

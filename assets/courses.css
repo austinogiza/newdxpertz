@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;469;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+:root {
+    --light: #F3F5F7;
+    --white: #ffffff;
+    --black: #000000;
+    --bold: 60px;
+    --title: 50px;
+    --text: 16px;
+    --head: 32px;
+    --header: 24px;
+    --new: rgba(255, 255, 255, 0.8);
+    --mob: 14px;
+    --blue: rgba(13, 89, 253, 0.7);
+    --grey: rgb(127, 140, 141, 0.6);
+    --dogder: rgba(17, 141, 240, 0.2)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--light);
+    width: 100%;
+    height: 100%;
+    font-family: 'Oswald', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--text);
+    line-height: 20px;
+}
+
+.courses {
+    width: 100%;
+    min-height: 500px;
+}
+
+.courses .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(200px, autos);
+}
+
+.courses img {
+    width: 100%;
+}
+
+.courses .images {
+    width: 100%;
+}

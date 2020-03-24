@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;469;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+:root {
+    --light: #F3F5F7;
+    --white: #ffffff;
+    --black: #000000;
+    --bold: 60px;
+    --title: 50px;
+    --text: 16px;
+    --head: 32px;
+    --header: 24px;
+    --new: rgba(255, 255, 255, 0.8);
+    --mob: 14px;
+    --blue: rgba(13, 89, 253, 0.7);
+    --grey: rgb(127, 140, 141, 0.6);
+    --dogder: rgba(17, 141, 240, 0.2)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--light);
+    width: 100%;
+    height: 100%;
+    font-family: 'Oswald', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--text);
+    line-height: 24px;
+}
+
+
+/* prog hero */
+
+.prog-hero {
+    height: 500px;
+    width: 100%;
+    background: url('../images/head.png') no-repeat center center/cover;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.prog-hero h1 {
+    font-size: var(--title);
+    text-transform: uppercase;
+}
+
+.prog-hero p {
+    font-size: var(--header);
+}
+
+.courses {
+    width: 100%;
+    min-height: 100px;
+}
+
+.courses .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(150px, autos);
+    max-width: 1100px;
+    margin: 0 auto;
+    grid-gap: 20px;
+    padding: 20px 0;
+}
+
+.courses img {
+    width: 100%;
+}
+
+.courses .images {
+    width: 100%;
+}
+
+.courses h1 {
+    font-size: var(--header);
+}
+
+
+/* middle hero */
+
+.middle-hero {
+    height: 500px;
+    width: 100%;
+    background: url('../images/course.png') no-repeat center center/cover;
+}
+
+.middle-hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    color: var(--white);
+}
+
+.middle-hero p {
+    color: var(--white);
+    margin: 20px 0;
+    font-size: var(--header);
+}
+
+.middle-hero h1 {
+    font-size: var(--title);
+    margin-top: auto;
+}
+
+
+/* end banner */
+
+.end-banner {
+    height: 400px;
+    width: 100%;
+    background: url('../images/end.png') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+}
+
+.end-banner a {
+    font-size: var(--title);
+    color: var(--white);
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+}
+
+.end-banner a::after {
+    width: 0%;
+    content: '';
+    height: 3px;
+    background: var(--blue);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+.end-banner a:hover {
+    color: var(--blue);
+}
+
+.end-banner a:hover::after {
+    width: 100%;
+}

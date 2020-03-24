@@ -1,0 +1,74 @@
+{%extends 'nav.html'%} {%load static%} {% block title %}D-Xpertz - WEB DESIGN {% endblock %} {%block content %}
+
+<section class="prog-hero">
+    <h1>The <span>Future </span> is now.</h1>
+    <p>What's in store for you?</p>
+</section>
+
+<!-- Courses Write Up -->
+<section class="courses">
+    <div class="container">
+        <div class="images"><img src="{% static 'images/webdesign.jpg'%}" alt=""></div>
+        <div class="details">
+            <h1>WEB DESIGN</h1>
+            <p>Be it large cooperate or small and medium scale offices, every business needs a website for organization to manage their transactions online, enhance service delivery reach out to a wider audience This course provides you with the skills and
+                project-based experience needed for entry into web design and development careers.
+
+            </p>
+            <p>You will be able to use a variety of strategies and tools to create websites.</p>
+            <p>You will understand the principles of creating an effective web page, including an in-depth consideration of information architecture</p>
+            <p>This course will introduce you to the realm of web design. The first and necessary step for that goal is to understand how HTML works, Topics covered are web history, website organization, HTML, graphics use, page and Students produce a website
+                to showcase future web work effective use of format and design for printing documents.</p>
+            <p>You will also learn CSS which is the styling markup language of websites, web apps and hybrid mobile apps.
+            </p>
+        </div>
+        <div class="details">
+            <h1>BROAD OBJECTIVES:</h1>
+            <p>Students will learn CSS' role in creating user interface (for mobile) and websites.</p>
+            <p>Students will learn the basic CSS concepts: selectors, CSS properties, CSS code structure, CSS declarations, CSS unit types etc.</p>
+            <p> <strong>DURATION:</strong> 3 MONTHS.</p>
+            <p> <strong>CERTIFICATE:</strong> Certificate in Adobe Dreamweaver, Flash, CSS and HTML.</p>
+            <p> <strong>ELIGIBILITY CRITERIA:</strong> Basic knowledge of computers and working with Internet. Ability to interact in English in classroom environment</p>
+            <p> <strong>JOB OPPORTUNITIES:</strong> Professional web designer, graphic and animation experts</p>
+        </div>
+        <div class="images"><img src="{%static 'images/web-designing.jpg'%}" alt=""></div>
+    </div>
+</section>
+
+<!-- Middle Banner -->
+
+<section class="middle-hero">
+
+    <div class="container">
+        <p>Interested in tech?</p>
+        <h1>Start Now</h1>
+    </div>
+
+</section>
+<!-- Courses Write Up -->
+<section class="courses">
+    <div class="container">
+        <div class="images"><img src="{% static 'images/webdesigning.png'%}" alt=""></div>
+        <div class="details">
+            <h1>GRAPHIC DESIGN:</h1>
+            <p>1. Working with bitmaps</p>
+            <p>2. Creating vector images</p>
+            <p>3. Working with text</p>
+            <p>4. Working with layers</p>
+            <p>5. Creating interactive buttons</p>
+            <p>6. Creating slices and hotspots</p>
+            <p>7. Optimizing for export</p>
+            <p>8. Creating G/F Animations</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- End banner -->
+
+<section class="end-banner">
+    <a href="{%url 'contact'%}">Register Now</a>
+</section>
+
+
+{%endblock%}

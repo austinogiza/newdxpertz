@@ -1,0 +1,76 @@
+{%extends 'nav.html'%} {%load static%} {% block title %}D-Xpertz - AUTOCAD {% endblock %} {%block content %}
+
+<section class="prog-hero">
+    <h1>The <span>Future </span> is now.</h1>
+    <p>What's in store for you?</p>
+</section>
+
+<!-- Courses Write Up -->
+<section class="courses">
+    <div class="container">
+        <div class="images"><img src="{% static 'images/autocad.png'%}" alt=""></div>
+        <div class="details">
+            <h1>AUTOCAD</h1>
+            <p>AutoCAD is a computer aided design (CAD) program used for 2-D and 3-D design and drafting.</p>
+            <p>AutoCAD is developed and marketed by Autodesk Inc. and was one of the initial CAD programs that could be executed on personal computer.</p>
+            <p>AutoCAD is the golden standard for Autodesk technology and application throughout. Autodesk is the world number one supplier of different application (software) such as AutoCAD, ArchiCAD, Revit, etc.
+            </p>
+            <p>Duration: 36 hours</p>
+        </div>
+        <div class="details">
+            <h1>AUTOCAD</h1>
+            <p>AutoCAD application is found in almost all the building and construction companies in the world.</p>
+            <p>With the introduction of different versions of AutoCAD, Autodesk has made AutoCAD a user friendly and robust application which has made all AutoCAD users highly skillful when using AutoCAD to create drawings.
+            </p>
+        </div>
+        <div class="images"><img src="{%static 'images/autocad.jpg'%}" alt=""></div>
+    </div>
+</section>
+
+<!-- Middle Banner -->
+
+<section class="middle-hero">
+
+    <div class="container">
+        <p>Interested in tech?</p>
+        <h1>Start Now</h1>
+    </div>
+
+</section>
+<!-- Courses Write Up -->
+<section class="courses">
+    <div class="container">
+        <div class="images"><img src="{% static 'images/auto.jpg'%}" alt=""></div>
+        <div class="details">
+            <h1>OBJECTIVES</h1>
+            <p>To employ the skills of drawing in two and three Dimensions.</p>
+            <p>To construct a building and road plans in a special way.</p>
+            <h1>CERTIFICATION</h1>
+
+            <p>Autodesk offers a range of certification options to help you achieve your goals, including certification for industry professionals, Students and Instructors.</p>
+            <p>Students and professionals wishing to receive Autodesk certification in Autodesk software can pursue two pathways.
+            </p>
+        </div>
+        <div class="details">
+            <h1>MODULES</h1>
+
+            <p>Learning Tools and Certification.</p>
+            <p>Creating of Mechanical Drawings.</p>
+            <p>Creating of Electrical Drawings.</p>
+            <p> Creating of Engineering drawings.</p>
+            <h1>AUTODESK CERTIFIED USER</h1>
+            <p>This certification are for those who are relatively new to Autodesk software and want to demonstrate basic proficiency, can seek to become certified users.</p>
+        </div>
+        <div class="images"><img src="{%static 'images/AutoCAD-professional.jpg'%}" alt=""></div>
+    </div>
+</section>
+
+<!-- End banner -->
+
+<section class="end-banner">
+    <a href="{%url 'contact'%}">Register Now</a>
+</section>
+
+
+
+{%endblock%}

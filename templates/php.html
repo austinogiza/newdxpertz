@@ -1,0 +1,80 @@
+{%extends 'nav.html'%} {%load static%} {% block title %}D-Xpertz - PHP {% endblock %} {%block content %}
+
+<section class="prog-hero">
+    <h1>The <span>Future </span> is now.</h1>
+    <p>What's in store for you?</p>
+</section>
+
+<!-- Courses Write Up -->
+<section class="courses">
+    <div class="container">
+        <div class="images"><img src="{% static 'images/php.jpg'%}" alt=""></div>
+        <div class="details">
+            <h1>PHP/MYSQL</h1>
+            <p>PHP can help you make your websites more dynamic and interactive and broaden your understanding of how servers work. Anyone can get started using PHP. PHP is a server scripting language designed for web development but also used as a general
+                purpose programming language PHP which stands for HYPERTEXT PREPROCESSOR is a very powerful, useful and easy to use programming Language to develop web applications. MYSQL on the other hand is the world’s most popular open source Relational
+                database management system. It is widely used for web applications. It should be noted that over 70% of the world dynamics websites today are developed using PHP/MYSQL. This is due to the power and simplicity of both technologies i.e PHP/MYSQL.
+
+            </p>
+        </div>
+        <div class="details">
+            <h1>COURSE CONTENT</h1>
+            <p>Design static websites using HTML AND CSS.</p>
+            <p>Use development tools such as Adobe Dreamweaver for Website.</p>
+            <p>Manage and understand Relational Database Management system using Mysql database as case study.</p>
+            <p>Use PHP to add dynamism to websites.</p>
+            <p>Understand the use of object oriented Javascript for adding dynamism to the web pages.</p>
+            <p>Develop an enterprise-driven application that works on a local area network.</p>
+        </div>
+        <div class="images"><img src="{%static 'images/phpimg.jpg'%}" alt=""></div>
+    </div>
+</section>
+
+<!-- Middle Banner -->
+
+<section class="middle-hero">
+
+    <div class="container">
+        <p>Interested in tech?</p>
+        <h1>Start Now</h1>
+    </div>
+
+</section>
+<!-- Courses Write Up -->
+<section class="courses">
+    <div class="container">
+        <div class="images"><img src="{% static 'images/phpimg2.jpg'%}" alt=""></div>
+        <div class="details">
+            <h1>AUDIENCE PROFILE</h1>
+            <p>This course is intended for the following persons:</p>
+            <p>Beginner</p>
+            <p>Web designers.</p>
+            <p>Web Administrator.</p>
+        </div>
+        <div class="details">
+            <h1>COURSE MODULES</h1>
+            <p>Introducing the Internet and the world wide web (WWW).</p>
+            <p>Designing a static website-HTML and CSS.</p>
+            <p>Relational Database Management system (RDMS)- MYSQL.</p>
+            <p>Fundamentals of programming-PHP.</p>
+            <p>Core PHP Concept.</p>
+            <p>PHP and Resource Management – Using files and Database.</p>
+            <p>Handling Errors in PHP.</p>
+            <p>The big picture projects.</p>
+            <p>Javascript – object – oriented programming concept (OOP), firm validation using Javascript.</p>
+
+            <p>JOB OPPORTUNITIES: WEB DEVELOPER, PORTAL DEVELOPER.</p>
+        </div>
+        <div class="images"><img src="{% static 'images/php_new.JPG' %}" alt=""></div>
+    </div>
+</section>
+
+<!-- End banner -->
+
+<section class="end-banner">
+    <a href="{%url 'contact'%}">Register Now</a>
+</section>
+
+
+
+{%endblock%}

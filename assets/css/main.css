@@ -1,0 +1,681 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;469;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+:root {
+    --light: #F3F5F7;
+    --white: #ffffff;
+    --black: #000000;
+    --bold: 60px;
+    --title: 50px;
+    --text: 16px;
+    --head: 32px;
+    --header: 24px;
+    --new: rgba(255, 255, 255, 0.8);
+    --mob: 14px;
+    --blue: rgba(13, 89, 253, 0.7);
+    --grey: rgb(127, 140, 141, 0.6);
+    --dogder: rgba(17, 141, 240, 0.2)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--light);
+    width: 100%;
+    height: 100%;
+    font-family: 'Oswald', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--text);
+    line-height: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+header {
+    background: url('../images/class.jpg') no-repeat center center/cover;
+    height: 600px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+header::after {
+    position: absolute;
+    content: '';
+    background: var(--dogder);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.mobile-menu {
+    z-index: 4;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-bar {
+    z-index: 3;
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 90px;
+    padding: 10px;
+    position: fixed;
+}
+
+.nav-bar img {
+    width: 120px;
+    height: 60px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li {
+    padding: 10px 15px;
+    text-transform: uppercase;
+    font-size: 20px;
+    transition: 0.4s ease;
+}
+
+nav ul li:hover {
+    background: var(--blue);
+    border-radius: 10px;
+}
+
+nav ul li a {
+    color: var(--white);
+}
+
+.start {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+.start h1 {
+    color: var(--white);
+    font-size: 60px;
+    margin: 10px 0;
+}
+
+.start a {
+    color: var(--white);
+    width: 200px;
+    height: 50px;
+    border: 1px solid var(--white);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    text-transform: uppercase;
+    transition: 0.4s ease;
+}
+
+.start a:hover {
+    background: var(--black);
+}
+
+
+/* Centre Section */
+
+.centre {
+    background: url('../images/bg.svg');
+    background-size: cover;
+    min-height: 600px;
+    width: 100%;
+}
+
+.centre .container {
+    max-width: 1100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.centre .title {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.centre .title h1 {
+    font-size: var(--title);
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(400px, auto);
+    width: 100%;
+    grid-gap: 20px;
+}
+
+.box .dets {
+    margin-top: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.box .dets img {
+    width: 100%;
+}
+
+
+/* banner Section */
+
+.banner {
+    width: 100%;
+    min-height: 300px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    background: transparent;
+}
+
+.banner img {
+    width: 100%;
+}
+
+
+/* What You Need */
+
+.hero-need {
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('../images/Subtract.svg');
+    background-size: cover;
+}
+
+.hero-need .desc {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(400px, auto);
+    margin-bottom: 30px;
+}
+
+.hero-need .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px 0 50px 0;
+}
+
+.hero-need .title h1 {
+    font-size: var(--title);
+    text-transform: uppercase;
+}
+
+.hero-need .title p {
+    text-transform: capitalize;
+}
+
+.hero-need .desc img {
+    width: 100%;
+}
+
+.hero-need .desc .info {
+    padding: 20px 30px;
+}
+
+.hero-need .desc .info h1 {
+    margin: 10px 0;
+    font-size: var(--title);
+}
+
+.hero-need .desc .info p {
+    margin: 10px 0 20px 0;
+}
+
+.hero-need .desc a {
+    width: 200px;
+    height: 50px;
+    border: 1px solid var(--black);
+    padding: 10px 20px;
+    color: var(--black);
+    border-radius: 10px;
+    transition: 0.4s ease-out;
+}
+
+.hero-need .desc a:hover {
+    color: var(--white);
+    background: var(--black);
+}
+
+.btn_need {
+    margin-top: 20px;
+}
+
+
+/* At Your Service */
+
+.hero-service {
+    min-height: 300px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.hero-service .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero-service .title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.hero-service .title h1 {
+    font-size: var(--title);
+    text-transform: uppercase;
+}
+
+.hero-service .title p {
+    font-size: var(--text);
+    text-transform: capitalize;
+}
+
+.hero-service .body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    grid-auto-rows: minmax(300px, auto);
+    text-align: center;
+}
+
+.hero-service .prog {
+    padding: 10px;
+    transition: 0.5s ease;
+    background: url('../images/bg.svg');
+    background-size: cover;
+}
+
+.hero-service .prog:hover {
+    background: var(--blue);
+    color: var(--white);
+}
+
+.hero-service .body .icon {
+    padding: 10px 0;
+}
+
+.hero-service .body h1 {
+    margin: 10px 0;
+    font-size: var(--header);
+}
+
+.hero-service .body p {
+    margin: 10px 0;
+    font-size: var(--text);
+    line-height: 24px;
+}
+
+
+/* I.T Training at D-Xpertz */
+
+.hero-training {
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    background: var(--blue);
+    color: var(--white);
+}
+
+.hero-training .desc {
+    padding: 70px 20px;
+}
+
+.hero-training .desc p {
+    margin: 10px 0;
+    color: var(--new);
+}
+
+.hero-training img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* programmes */
+
+.programmes {
+    width: 100%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.programmes h1 {
+    font-size: var(--title);
+    margin: 10px 0;
+}
+
+.programmes a {
+    width: 150px;
+    color: var(--black);
+    height: 50px;
+    border: 1px solid var(--black);
+    border-radius: 10px;
+    transition: 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.programmes a:hover {
+    background: var(--blue);
+    color: var(--white);
+}
+
+
+/* Footer */
+
+footer {
+    background: var(--grey);
+    min-height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-top nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-top nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-top nav ul li {
+    padding: 10px 15px;
+    text-transform: uppercase;
+    font-size: 20px;
+    transition: 0.4s ease;
+}
+
+.footer-top nav ul li:hover {
+    background: var(--blue);
+    border-radius: 10px;
+}
+
+.footer-top nav ul li a {
+    color: var(--white);
+}
+
+.footer-center {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--black);
+}
+
+.footer-center p {
+    font-size: 26px;
+    margin: 10px 0;
+    color: var(--black);
+}
+
+.footer-center a {
+    font-size: 21px;
+    margin: 10px 0 0 0;
+    color: var(--black);
+    transition: 0.4s ease;
+}
+
+.footer-center a:hover {
+    margin: 10px 0 0 0;
+    color: var(--blue);
+}
+
+.back-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 30px;
+    outline: none;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+    color: var(--black);
+    width: 40px;
+    height: 40px;
+}
+
+.back-top:focus,
+.back-top:hover {
+    color: var(--blue);
+}
+
+@media only screen and (max-width:787px) {
+    .nav-link {
+        width: 100%;
+        background-color: var(--black);
+        height: 40vh;
+        position: absolute;
+        z-index: 100;
+        transform: translateY(-500px);
+        transition: transform 0.5s ease-in;
+    }
+    .mobile-menu {
+        display: block;
+        z-index: 100;
+    }
+    .nav-active {
+        transform: translateY(0%);
+    }
+    .nav-link ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 40px;
+    }
+    .line {
+        height: 40px;
+        width: 30px;
+        background: var(--white);
+        display: flex;
+        flex-direction: column;
+    }
+    .line1 {
+        background: var(--white);
+        height: 3px;
+        width: 30px;
+        margin-top: -5px;
+        border-radius: 2px;
+    }
+    .line2 {
+        background: var(--white);
+        height: 3px;
+        width: 30px;
+        margin-top: 3px;
+        border-radius: 2px;
+    }
+    .line3 {
+        background: var(--white);
+        height: 3px;
+        border-radius: 12px;
+        width: 30px;
+        margin-top: 3px;
+    }
+    .toggle .line1 {
+        transform: rotate(45deg) translate(-5px, 7px);
+        transition: 0.4s ease;
+    }
+    .toggle .line2 {
+        display: none;
+    }
+    .toggle .line3 {
+        transform: rotate(-45deg) translate(-5px, -7px);
+        transition: 0.4s ease;
+    }
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+}
+
+@media only screen and (max-width:567px) {
+    .start h1 {
+        color: var(--white);
+        font-size: var(--head);
+    }
+    .box {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: minmax(400px, auto);
+        width: 100%;
+        grid-gap: 20px;
+    }
+    .hero-need .desc {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: minmax(400px, auto);
+        margin-bottom: 30px;
+    }
+    .hero-service .body {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        grid-auto-rows: minmax(100px, auto);
+        text-align: center;
+    }
+    .hero-training {
+        min-height: 500px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        background: var(--blue);
+        color: var(--white);
+    }
+    .centre .title h1 {
+        font-size: var(--head);
+    }
+    .hero-need .title h1 {
+        font-size: var(--head);
+        text-align: left;
+    }
+    .hero-need .desc .info h1 {
+        margin: 10px 0;
+        font-size: var(--head);
+        padding: 0;
+    }
+    .hero-need .title p {
+        text-transform: capitalize;
+        padding: 0 15px;
+    }
+    .hero-need .desc .info {
+        padding: 20px 30px;
+    }
+    .hero-service .title h1 {
+        font-size: var(--head);
+        text-transform: uppercase;
+    }
+    .programmes h1 {
+        font-size: var(--head);
+        margin: 10px 0;
+        text-align: center;
+    }
+    .footer-center p {
+        font-size: 21px;
+        margin: 10px 0;
+        line-height: 30px;
+        text-align: center;
+    }
+    .footer-top nav ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    p {
+        font-size: var(--mob);
+    }
+    .start h1 {
+        color: var(--white);
+        font-size: var(--header);
+    }
+    .centre .title h1 {
+        font-size: var(--head);
+    }
+    .hero-need .title h1 {
+        font-size: var(--header);
+        text-align: left;
+    }
+    .hero-need .desc .info h1 {
+        margin: 10px 0;
+        font-size: var(--header);
+        padding: 0;
+    }
+    .hero-service .title h1 {
+        font-size: var(--header);
+        text-transform: uppercase;
+    }
+    .programmes h1 {
+        font-size: var(--header);
+        margin: 10px 0;
+        text-align: center;
+    }
+    .footer-center p {
+        font-size: 21px;
+        margin: 10px 0;
+        line-height: 30px;
+        text-align: center;
+    }
+}
