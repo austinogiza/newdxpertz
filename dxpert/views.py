@@ -1,6 +1,11 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.views.generic.edit import CreateView
 from .forms import ContactForm
+from django.core.mail import EmailMessage, send_mail
+from django.conf import settings
+from django.http import HttpResponse, HttpResponseRedirect
+from django.template.loader import get_template
+from .models import Contact
 
 
 def home(request):
@@ -11,10 +16,41 @@ def about(request):
     return render(request, 'about.html')
 
 
-class contact(CreateView):
-    form_class = ContactForm
-    template_name = 'contact.html'
-    success_url = '../success/'
+def contact(request):
+
+    form = ContactForm(request.POST or None)
+    template = 'contact.html'
+
+    if form.is_valid():
+        name = form.cleaned_data.get('name')
+        email = form.cleaned_data.get('email')
+        message = form.cleaned_data.get('message')
+        phone = form.cleaned_data.get('phone')
+        emailTo = [settings.EMAIL_HOST_USER]
+        content = {
+            'name': name,
+            'email': email,
+            'phone': phone,
+            'message': message
+        }
+
+        contact = Contact(
+            name=name,
+            phone=phone,
+            email=email,
+            message=message
+        )
+        contact.save()
+
+        send_mail(
+            'New email from contant form',
+            content,
+            email,
+            ['contact@dxpertz.com'],
+
+        )
+        return redirect('../success/')
+    return render(request, 'contact.html', {'form': form})
 
 
 def programmes(request):

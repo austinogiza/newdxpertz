@@ -1,8 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aceb1e0e-deaa-4e6f-82d8-4898160e1ba7" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="aceb1e0e-deaa-4e6f-82d8-4898160e1ba7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dxpert/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/dxpert/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dxpert/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/dxpert/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dxpert/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/dxpert/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dxpertz/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/dxpertz/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dxpertz/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/dxpertz/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/about.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/about.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/courses.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/courses.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/programme.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/programme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/A Human/Sitting-1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/A Human/Sitting.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/A Human/Sitting@2x.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/Scene/Wireframe-1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/Scene/Wireframe.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/Scene/Wireframe@2x.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/banner.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/banner.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/banner.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/banner.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/end.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/end.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/head.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/head.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/middle.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/middle.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/office.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/office.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/staff.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/staff.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ielts-exam.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ielts-exam.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ielts.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ielts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/nav.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/programmes.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/programmes.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,23 +41,21 @@
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
-  <component name="ProjectId" id="1ZO5iCUG5kHvnUZZ7NdLtoSoHVf" />
-  <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="ProjectId" id="1ZO5iCUG5kHvnUZZ7NdLtoSoHVf" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tmr" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager">
     <configuration name="dxpertz" type="Python.DjangoServer" factoryName="Django server">
@@ -66,10 +94,29 @@
       <updated>1584697424919</updated>
       <workItem from="1584697461665" duration="1313000" />
       <workItem from="1584740159033" duration="3260000" />
+      <workItem from="1586104330687" duration="415000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1587376332055">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1587376332054" />
   </component>
 </project>

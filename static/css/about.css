@@ -155,6 +155,15 @@ p {
 }
 
 @media only screen and (max-width:790px) {
+    .about-hero {
+        width: 100%;
+        height: 400px;
+        background: url('../images/about_mobile.png') no-repeat center center/cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
     .company-profile {
         grid-template-columns: repeat(1, 1fr);
     }

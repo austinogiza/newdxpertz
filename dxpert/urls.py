@@ -9,7 +9,7 @@ urlpatterns = [
 
     path('', views.home, name='home'),
     path('about/', views.about, name='about'),
-    path('contact/', views.contact.as_view(), name='contact'),
+    path('contact/', views.contact, name='contact'),
     path('programmes/', views.programmes, name='programmes'),
     path('programmes/ielts/', views.ielts, name='ielts'),
     path('programmes/php/', views.php, name='php'),
