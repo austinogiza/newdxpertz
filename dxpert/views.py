@@ -1,11 +1,16 @@
 from django.shortcuts import render, redirect
-from django.views.generic.edit import CreateView
+from django.views.generic import CreateView, DetailView
 from .forms import ContactForm
 from django.core.mail import EmailMessage, send_mail
 from django.conf import settings
 from django.http import HttpResponse, HttpResponseRedirect
 from django.template.loader import get_template
-from .models import Contact
+from .models import Contact, Courses
+
+
+class CourseDetailsViews(DetailView):
+    model = Courses
+    template_name = "detail.html"
 
 
 def home(request):

@@ -4,7 +4,7 @@ from django.urls import path, include
 
 from . import views
 
-
+# app_name='dxpertz'
 urlpatterns = [
 
     path('', views.home, name='home'),
@@ -26,4 +26,5 @@ urlpatterns = [
     path('programmes/webdesign/', views.webdesign, name='webdesign'),
     path('success/', views.success, name='success'),
     path('ielts-exam/', views.ieltsexam, name='ieltsexam'),
+    path('programmes/<slug>', views.CourseDetailsViews.as_view(), name='course')
 ]
