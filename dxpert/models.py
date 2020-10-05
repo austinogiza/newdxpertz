@@ -8,7 +8,7 @@ from django.shortcuts import reverse
 class Contact(models.Model):
     name = models.CharField(max_length=100, blank=False)
     email = models.EmailField(max_length=100, blank=False)
-    phone = models.BigIntegerField(blank=False)
+    phone = models.CharField(max_length=100, blank=False)
     time = models.DateTimeField(auto_now_add=True)
     message = models.TextField(max_length=2000, blank=False)
 

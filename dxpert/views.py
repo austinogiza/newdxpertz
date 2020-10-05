@@ -4,7 +4,7 @@ from .forms import ContactForm
 from django.core.mail import EmailMessage, send_mail
 from django.conf import settings
 from django.http import HttpResponse, HttpResponseRedirect
-from django.template.loader import get_template
+from django.template.loader import get_template, render_to_string
 from .models import Contact, Courses
 
 
@@ -46,12 +46,13 @@ def contact(request):
             message=message
         )
         contact.save()
+        content = template = render_to_string('contact_template.html', content)
 
         send_mail(
             'New email from contant form',
             content,
-            email,
-            ['contact@dxpertz.com'],
+            settings.EMAIL_HOST_USER,
+            [settings.EMAIL_HOST_USER],
 
         )
         return redirect('../success/')

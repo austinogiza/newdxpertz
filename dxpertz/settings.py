@@ -61,13 +61,14 @@ TEMPLATES = [
 WSGI_APPLICATION = 'dxpertz.wsgi.application'
 
 # email backend
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_USE_TLS = True
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = "dxpertzcomputer@gmail.com"
-EMAIL_HOST_PASSWORD = "shalom@2019"
+EMAIL_HOST = 'smtp.zoho.com'
+EMAIL_HOST_USER = "contact@dxpertz.com"
+EMAIL_HOST_PASSWORD = "Shalom@2020"
 EMAIL_PORT = 587
-
+EMAIL_USE_SSL = False
+DEFAULT_FROM_EMAIL = 'contact@dxpertz.com'
 #
 # EMAIL_USE_TLS = True
 # EMAIL_HOST = 'smtp.gmail.com'
