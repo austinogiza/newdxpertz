@@ -142,3 +142,15 @@ STATICFILES_DIRS = [
 ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
+
+
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
+         'LOCATION': [
+            '194.36.88.157:11211',
+            'dxpertz.com:11211',
+            'www.dxpertz.com:11211',
+        ]
+    }
+}
