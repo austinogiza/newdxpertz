@@ -92,10 +92,21 @@ DEFAULT_FROM_EMAIL = 'contact@dxpertz.com'
 #     }
 # }
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'dx.db'),
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'dx.db'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'dxpertz',
+        'USER': 'dxpertz',
+        'PASSWORD': 'dxpertz',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
