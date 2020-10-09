@@ -65,7 +65,7 @@ WSGI_APPLICATION = 'dxpertz.wsgi.application'
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.zoho.com'
 EMAIL_HOST_USER = "contact@dxpertz.com"
-EMAIL_HOST_PASSWORD = "Shalom@2020"
+EMAIL_HOST_PASSWORD = "Juliet@2020"
 EMAIL_PORT = 587
 EMAIL_USE_SSL = False
 DEFAULT_FROM_EMAIL = 'contact@dxpertz.com'
@@ -148,7 +148,7 @@ CACHES = {
     'default': {
         'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
          'LOCATION': [
-            '194.36.88.157:11211',
+            '173.82.154.94:11211',
             'dxpertz.com:11211',
             'www.dxpertz.com:11211',
         ]
