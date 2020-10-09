@@ -12,9 +12,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'uc$)e$l2h7h82gwxsxla2*(109jz(k85ghyce9240+vsns@$xl'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = []
+# DEBUG = True
+DEBUG = False
+# ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["173.82.154.94", 'dxpertz.com', 'www.dxpertz.com']
 
 
 # Application definition
