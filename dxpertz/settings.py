@@ -15,7 +15,7 @@ SECRET_KEY = 'uc$)e$l2h7h82gwxsxla2*(109jz(k85ghyce9240+vsns@$xl'
 # DEBUG = True
 DEBUG = False
 # ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ["173.82.154.94", 'dxpertz.com', 'www.dxpertz.com']
+ALLOWED_HOSTS = ["173.82.94.169", 'dxpertz.com', 'www.dxpertz.com']
 
 
 # Application definition
@@ -160,7 +160,7 @@ CACHES = {
     'default': {
         'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
          'LOCATION': [
-            '173.82.154.94:11211',
+            '173.82.94.169:11211',
             'dxpertz.com:11211',
             'www.dxpertz.com:11211',
         ]
