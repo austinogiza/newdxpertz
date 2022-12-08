@@ -1,7 +1,7 @@
 appdirs==1.4.4
 asgiref==3.2.9
 autopep8==1.5
-certifi==2020.6.20
+certifi==2022.12.7
 chardet==3.0.4
 defusedxml==0.6.0
 distlib==0.3.0
